@@ -1,0 +1,1683 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='GDPonPPPandperCapita' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (03GDP Per Capita)' inline='true' name='federated.0j0y70j1dd80yd18ya16s0dhlvaz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='03GDP Per Capita' name='excel-direct.0mfpkpt0p3zor71dy7hcf14go0zg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Data Story/03GDP Per Capita.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0mfpkpt0p3zor71dy7hcf14go0zg' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='real' name='GDP per capita, current prices  (U.S. dollars per capita)' ordinal='1' />
+            <column datatype='string' name='Country' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0mfpkpt0p3zor71dy7hcf14go0zg' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='real' name='GDP per capita, current prices  (U.S. dollars per capita)' ordinal='1' />
+            <column datatype='string' name='Country' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C95:no:A1:C95:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_97742BE6161E40DE9432BF55AC4BECE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP per capita, current prices  (U.S. dollars per capita)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GDP per capita, current prices  (U.S. dollars per capita)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>GDP per capita, current prices  (U.S. dollars per capita)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_97742BE6161E40DE9432BF55AC4BECE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_97742BE6161E40DE9432BF55AC4BECE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_97742BE6161E40DE9432BF55AC4BECE1]' role='measure' type='quantitative' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='zh_CN' class='hyper' dbname='C:/Users/asus/Documents/我的 Tableau 存储库/数据源/Sheet1 (03GDP Per Capita).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/07/2022 02:41:36 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Sheet1 (03GDP Per Capita)' increment-value='%null%' refresh-type='create' rows-inserted='94' timestamp-start='2022-01-07 14:41:36.061' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GDP per capita, current prices  (U.S. dollars per capita)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GDP per capita, current prices  (U.S. dollars per capita)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GDP per capita, current prices  (U.S. dollars per capita)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;The United States&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_97742BE6161E40DE9432BF55AC4BECE1'>
+            <properties context=''>
+              <relation connection='excel-direct.0mfpkpt0p3zor71dy7hcf14go0zg' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='real' name='GDP per capita, current prices  (U.S. dollars per capita)' ordinal='1' />
+                  <column datatype='string' name='Country' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (03GDP based on PPP)' inline='true' name='federated.0u489j50nzvmqo1gd373o1y07qzi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='03GDP based on PPP' name='excel-direct.181napp13mlpqu15nrexn06fv2j5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Data Story/03GDP based on PPP.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.181napp13mlpqu15nrexn06fv2j5' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='real' name='GDP based on PPP, share of world (Percentage)' ordinal='1' />
+            <column datatype='string' name='Country' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.181napp13mlpqu15nrexn06fv2j5' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='real' name='GDP based on PPP, share of world (Percentage)' ordinal='1' />
+            <column datatype='string' name='Country' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C95:no:A1:C95:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F15EF28C32B244FB98596C6D5551D187]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP based on PPP, share of world (Percentage)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GDP based on PPP, share of world (Percentage)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>GDP based on PPP, share of world (Percentage)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F15EF28C32B244FB98596C6D5551D187]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F15EF28C32B244FB98596C6D5551D187]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_F15EF28C32B244FB98596C6D5551D187]' role='measure' type='quantitative' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <group caption='集 1' name='[集 1]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='member' level='[Country]' member='&quot;The United States&quot;' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[Year]' member='2021' />
+            <groupfilter function='member' level='[Year]' member='2022' />
+            <groupfilter function='member' level='[Year]' member='2023' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='zh_CN' class='hyper' dbname='C:/Users/asus/Documents/我的 Tableau 存储库/数据源/Sheet1 (03GDP based on PPP).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/07/2022 02:41:19 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Sheet1 (03GDP based on PPP)' increment-value='%null%' refresh-type='create' rows-inserted='94' timestamp-start='2022-01-07 14:41:18.933' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F15EF28C32B244FB98596C6D5551D187]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GDP based on PPP, share of world (Percentage)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GDP based on PPP, share of world (Percentage)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GDP based on PPP, share of world (Percentage)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F15EF28C32B244FB98596C6D5551D187]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F15EF28C32B244FB98596C6D5551D187]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;The United States&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_F15EF28C32B244FB98596C6D5551D187'>
+            <properties context=''>
+              <relation connection='excel-direct.181napp13mlpqu15nrexn06fv2j5' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='real' name='GDP based on PPP, share of world (Percentage)' ordinal='1' />
+                  <column datatype='string' name='Country' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>The GDP Share of the World Based on Purchasing Power Parity of China and the United States </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (03GDP based on PPP)' name='federated.0u489j50nzvmqo1gd373o1y07qzi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0u489j50nzvmqo1gd373o1y07qzi'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[GDP based on PPP, share of world (Percentage)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GDP based on PPP, share of world (Percentage)]' derivation='Sum' name='[sum:GDP based on PPP, share of world (Percentage):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;The United States&quot;</bucket>
+              <bucket>&quot;China&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]' field-type='quantitative' max='2028' min='1978' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]' scope='rows' value='GDP Based on PPP, Share of World (%)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]' value='Times New Roman' />
+            <format attr='font-size' field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]' value='Times New Roman' />
+            <format attr='font-family' field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]' value='Times New Roman' />
+            <format attr='font-size' field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]' value='9' />
+            <format attr='font-size' field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]' value='9' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]' value='' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_1' value='#00000000' />
+            <format attr='line-visibility' id='annotation_1' value='on' />
+            <format attr='line-pattern-only' id='annotation_1' value='dotted' />
+            <format attr='stroke-color' id='annotation_1' value='#f28e2b' />
+            <format attr='line-visibility' id='annotation_2' value='on' />
+            <format attr='line-pattern-only' id='annotation_2' value='dotted' />
+            <format attr='stroke-color' id='annotation_2' value='#f28e2b' />
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='line-visibility' id='annotation_3' value='on' />
+            <format attr='line-pattern-only' id='annotation_3' value='dotted' />
+            <format attr='stroke-color' id='annotation_3' value='#f28e2b' />
+            <format attr='fill-color' id='annotation_3' value='#00000000' />
+            <format attr='fill-color' id='annotation_4' value='#00000000' />
+            <format attr='line-visibility' id='annotation_4' value='on' />
+            <format attr='line-pattern-only' id='annotation_4' value='dotted' />
+            <format attr='stroke-color' id='annotation_4' value='#f28e2b' />
+            <format attr='stroke-color' id='annotation_6' value='#f28e2b' />
+            <format attr='line-visibility' id='annotation_6' value='on' />
+            <format attr='line-pattern-only' id='annotation_6' value='dotted' />
+            <format attr='fill-color' id='annotation_6' value='#00000000' />
+            <format attr='fill-color' id='annotation_5' value='#f9e9e081' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='dotted' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</rows>
+        <cols>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</cols>
+        <annotations>
+          <annotation class='point' id='1' mark-position='1' pullback='0' text-width='60'>
+            <formatted-text>
+              <run bold='true' fontcolor='#f28e2b'>10.69%</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#f28e2b'>（1980）</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>1980</value>
+                    <value>2.262</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-1' y='-601' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#f28e2b'>50.16%</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#f28e2b'>（2005）</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>2005</value>
+                    <value>9.5920000000000005</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='0' y='-361' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='0' text-width='59'>
+            <formatted-text>
+              <run bold='true' fontcolor='#f28e2b'>100.06%</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#f28e2b'>（2016）</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>2016</value>
+                    <value>16.178999999999998</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='0' y='-167' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='0' text-width='56'>
+            <formatted-text>
+              <run bold='true' fontcolor='#f28e2b'>105.53%</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#f28e2b'>（2018）</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;The United States&quot;</value>
+                    <value>2018</value>
+                    <value>15.913</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='1' y='-121' />
+          </annotation>
+          <annotation class='area' id='5' text-pinx='0.5' text-piny='0.5' text-width-delta='-35'>
+            <formatted-text>
+              <run>Prediction&#10;（2021-2026）</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2020.027194066749'>
+                  <node-reference>
+                    <axis>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='23.42519671772429'>
+                  <node-reference>
+                    <axis>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2027.938195302843'>
+                  <node-reference>
+                    <axis>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='0.034097811816193507'>
+                  <node-reference>
+                    <axis>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.981499' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='0' text-width='56'>
+            <formatted-text>
+              <run bold='true' fontcolor='#f28e2b'>134.70%</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#f28e2b'>（2026）</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Year:qk]</field>
+                      <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[sum:GDP based on PPP, share of world (Percentage):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;The United States&quot;</value>
+                    <value>2026</value>
+                    <value>14.984999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='0' y='-198' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{396E95A6-8C87-4E30-B49C-3E3124F8BA06}' />
+    </worksheet>
+    <worksheet name='工作表 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>The GDP Per Capita at Current Price of China and the United States </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (03GDP Per Capita)' name='federated.0j0y70j1dd80yd18ya16s0dhlvaz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j0y70j1dd80yd18ya16s0dhlvaz'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[GDP per capita, current prices  (U.S. dollars per capita)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GDP per capita, current prices  (U.S. dollars per capita)]' derivation='Sum' name='[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;The United States&quot;</bucket>
+              <bucket>&quot;China&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]' scope='rows' value='GDP Per Capita at Current Prices (US$)  ' />
+            <encoding attr='space' class='0' field='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]' field-type='quantitative' max='2028' min='1978' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]' field-type='quantitative' max='95948.700348400002' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]' value='#000000' />
+            <format attr='color' field='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]' value='9' />
+            <format attr='font-size' field='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]' value='9' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]' value='' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='font-size' value='9' />
+            <format attr='line-visibility' id='annotation_1' value='on' />
+            <format attr='line-pattern-only' id='annotation_1' value='dotted' />
+            <format attr='stroke-color' id='annotation_1' value='#f28e2b' />
+            <format attr='line-visibility' id='annotation_2' value='on' />
+            <format attr='line-pattern-only' id='annotation_2' value='dotted' />
+            <format attr='stroke-color' id='annotation_2' value='#f28e2b' />
+            <format attr='line-visibility' id='annotation_3' value='on' />
+            <format attr='line-pattern-only' id='annotation_3' value='dotted' />
+            <format attr='stroke-color' id='annotation_3' value='#f28e2b' />
+            <format attr='fill-color' id='annotation_4' value='#00000000' />
+            <format attr='line-visibility' id='annotation_4' value='on' />
+            <format attr='line-pattern-only' id='annotation_4' value='dotted' />
+            <format attr='stroke-color' id='annotation_4' value='#f28e2b' />
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='fill-color' id='annotation_3' value='#00000000' />
+            <format attr='fill-color' id='annotation_5' value='#f9e9e081' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</rows>
+        <cols>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]</field>
+                  <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                  <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;The United States&quot;</value>
+                <value>1995</value>
+                <value>28671.488000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]</field>
+                  <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                  <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;The United States&quot;</value>
+                <value>2026</value>
+                <value>86428.687999999995</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='18' y='-10' />
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='1' mark-position='1' pullback='0' text-width='48'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#f28e2b' fontsize='8'>2.45%</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#f28e2b' fontsize='8'>(1980)</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]</field>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>1980</value>
+                    <value>306.98000000000002</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='0' y='-224' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#f28e2b' fontsize='8'>2.62%</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#f28e2b' fontsize='8'>(2000)</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]</field>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>2000</value>
+                    <value>951.16300000000001</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='1' y='-370' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#f28e2b' fontsize='8'>15.69%</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#f28e2b' fontsize='8'>(2018)</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]</field>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>2018</value>
+                    <value>9848.9490000000005</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='0' y='-463' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='0' text-width='50'>
+            <formatted-text>
+              <run bold='true' fontcolor='#f28e2b' fontsize='8'>20.24%</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#f28e2b' fontsize='8'>(2026)</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]</field>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</field>
+                      <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>2026</value>
+                    <value>17492.963</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='0' y='-496' />
+          </annotation>
+          <annotation class='area' id='5' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontcolor='#000000' fontsize='8'>Prediction</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontsize='8'>(2021-2026)</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2020.1176470588234'>
+                  <node-reference>
+                    <axis>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='95948.700348400002'>
+                  <node-reference>
+                    <axis>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2027.8823529411766'>
+                  <node-reference>
+                    <axis>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='289.4380101007531'>
+                  <node-reference>
+                    <axis>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[sum:GDP per capita, current prices  (U.S. dollars per capita):qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.980609' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{CFFAB0A8-71A9-46DF-8F79-E64EA277D577}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='仪表板 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#333333'>The GDP Share of the World Based on Purchasing Power Parity and the GDP Per Capita of China and the United States </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='text-align' value='center' />
+          <format attr='color' value='#000000' />
+          <format attr='font-size' value='15' />
+          <format attr='font-family' value='Times New Roman' />
+          <format attr='background-color' value='#e6e6e6' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1800' minheight='800' minwidth='1800' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='99112' x='444' y='1000'>
+            <zone fixed-size='56' h='8000' id='17' is-fixed='true' type-v2='title' w='99112' x='444' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90000' id='7' param='horz' type-v2='layout-flow' w='99112' x='444' y='9000'>
+              <zone h='90000' id='5' type-v2='layout-basic' w='48056' x='444' y='9000'>
+                <zone h='90000' id='3' name='工作表 1' show-title='false' w='48056' x='444' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='919' h='90000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='51056' x='48500' y='9000'>
+                <zone h='90000' id='9' name='工作表 2' show-title='false' w='51056' x='48500' y='9000'>
+                  <layout-cache minheight='149' minwidth='161' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7625' id='10' name='工作表 2' pane-specification-id='0' param='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]' type-v2='color' w='6056' x='85500' y='9625' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333'>The GDP Share of the World Based on Purchasing Power Parity and the GDP Per Capita of China and the United States </run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='30' param='vert' type-v2='layout-flow' w='99112' x='444' y='1000'>
+                <zone fixed-size='56' h='8000' id='17' type-v2='title' w='99112' x='444' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90000' id='3' is-fixed='true' name='工作表 1' show-title='false' w='48056' x='444' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90000' id='9' is-fixed='true' name='工作表 2' show-title='false' w='51056' x='48500' y='9000'>
+                  <layout-cache minheight='149' minwidth='161' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7625' id='10' name='工作表 2' pane-specification-id='0' param='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]' type-v2='color' w='6056' x='85500' y='9625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A34A1198-0A12-4055-A095-821E15A99E4C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{78551EBF-2F57-4335-9D7E-3455F154C3A6}' />
+    </window>
+    <window class='worksheet' name='工作表 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{74341099-843C-44BF-AF4D-8099B62836FB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='仪表板 1'>
+      <viewpoints>
+        <viewpoint name='工作表 1'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0u489j50nzvmqo1gd373o1y07qzi].[none:Country:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='工作表 2'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0j0y70j1dd80yd18ya16s0dhlvaz].[none:Country:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A4BE86B8-5750-48AD-ABE7-9E68C8DA134D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='仪表板 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+      NcXoakRQAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='工作表 2' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

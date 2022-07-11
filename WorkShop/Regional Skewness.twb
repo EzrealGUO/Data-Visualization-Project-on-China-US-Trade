@@ -1,0 +1,1242 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='RegionalSkewness' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (08Trade Skewness)' inline='true' name='federated.16rjcv31ec2e7e13x8o7714hgdmo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='08Trade Skewness' name='excel-direct.0f2mjnb1enxfb917sycrz0gcrdhq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Data Story/08Trade Skewness.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0f2mjnb1enxfb917sycrz0gcrdhq' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D13:no:A1:D13:0' header='yes' outcome='6'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='string' name='Skewness' ordinal='2' />
+            <column datatype='integer' name='% Share of Economic Behavior' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0f2mjnb1enxfb917sycrz0gcrdhq' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D13:no:A1:D13:0' header='yes' outcome='6'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='string' name='Skewness' ordinal='2' />
+            <column datatype='integer' name='% Share of Economic Behavior' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D13:no:A1:D13:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_36899309FA0C4F1E80DD6ABCC866A871]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_36899309FA0C4F1E80DD6ABCC866A871]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Skewness</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Skewness]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Skewness</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_36899309FA0C4F1E80DD6ABCC866A871]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% Share of Economic Behavior</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% Share of Economic Behavior]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>% Share of Economic Behavior</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_36899309FA0C4F1E80DD6ABCC866A871]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Skewness]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Export Skewness&quot;' value='Export in Located Region' />
+          <alias key='&quot;Import Skewness&quot;' value='Import in Loacted Region' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_36899309FA0C4F1E80DD6ABCC866A871]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='zh_CN' class='hyper' dbname='C:/Users/asus/Documents/我的 Tableau 存储库/数据源/Sheet1 (08Trade Skewness).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/12/2022 12:31:23 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Sheet1 (08Trade Skewness)' increment-value='%null%' refresh-type='create' rows-inserted='12' timestamp-start='2022-01-12 12:31:23.781' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_36899309FA0C4F1E80DD6ABCC866A871]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_36899309FA0C4F1E80DD6ABCC866A871]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Skewness</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Skewness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Skewness</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_36899309FA0C4F1E80DD6ABCC866A871]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% Share of Economic Behavior</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% Share of Economic Behavior]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% Share of Economic Behavior</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_36899309FA0C4F1E80DD6ABCC866A871]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;实际&quot;</bucket>
+            <bucket>&quot;估计&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_36899309FA0C4F1E80DD6ABCC866A871'>
+            <properties context=''>
+              <relation connection='excel-direct.0f2mjnb1enxfb917sycrz0gcrdhq' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D13:no:A1:D13:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='string' name='Skewness' ordinal='2' />
+                  <column datatype='integer' name='% Share of Economic Behavior' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (08Trade Skewness)' name='federated.16rjcv31ec2e7e13x8o7714hgdmo' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16rjcv31ec2e7e13x8o7714hgdmo'>
+            <column datatype='integer' name='[% Share of Economic Behavior]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Skewness]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Export Skewness&quot;' value='Export in Located Region' />
+                <alias key='&quot;Import Skewness&quot;' value='Import in Loacted Region' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Skewness]' derivation='None' name='[none:Skewness:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[% Share of Economic Behavior]' derivation='Sum' name='[sum:% Share of Economic Behavior:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]' field-type='quantitative' major-origin='0' major-spacing='2' max='2022' min='1996' minor-origin='2000' minor-spacing='2' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]' scope='rows' value='Share of Economic Behavior in Located Regions(%)' />
+            <encoding attr='space' class='0' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]' field-type='quantitative' major-origin='0' major-spacing='5' max='50' min='20' minor-origin='2000' minor-spacing='2' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]' value='Times New Roman' />
+            <format attr='color' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]' value='#000000' />
+            <format attr='font-family' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]' value='Times New Roman' />
+            <format attr='color' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]' value='#000000' />
+            <format attr='font-family' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]' value='Times New Roman' />
+            <format attr='color' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]' value='#000000' />
+            <format attr='font-family' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]' value='Times New Roman' />
+            <format attr='color' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='stroke-color' value='#e15759' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='stroke-color' id='annotation_2' value='#4e79a7' />
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='line-end' id='annotation_2' value='none' />
+            <format attr='fill-color' id='annotation_3' value='#00000000' />
+            <format attr='line-visibility' id='annotation_3' value='on' />
+            <format attr='line-pattern-only' id='annotation_3' value='dotted' />
+            <format attr='stroke-color' id='annotation_3' value='#4e79a7' />
+            <format attr='fill-color' id='annotation_4' value='#00000000' />
+            <format attr='body-type' id='annotation_4' value='edge' />
+            <format attr='stroke-color' id='annotation_4' value='#f28e2b' />
+            <format attr='line-visibility' id='annotation_4' value='on' />
+            <format attr='line-pattern-only' id='annotation_4' value='dotted' />
+            <format attr='fill-color' id='annotation_5' value='#00000000' />
+            <format attr='line-visibility' id='annotation_5' value='on' />
+            <format attr='line-pattern-only' id='annotation_5' value='dotted' />
+            <format attr='stroke-color' id='annotation_5' value='#f28e2b' />
+            <format attr='rounding' id='annotation_5' value='small' />
+            <format attr='fill-color' id='annotation_6' value='#00000000' />
+            <format attr='line-visibility' id='annotation_6' value='on' />
+            <format attr='line-pattern-only' id='annotation_6' value='dotted' />
+            <format attr='stroke-color' id='annotation_6' value='#4e79a7' />
+            <format attr='line-visibility' id='annotation_7' value='on' />
+            <format attr='line-pattern-only' id='annotation_7' value='dotted' />
+            <format attr='stroke-color' id='annotation_7' value='#4e79a7' />
+            <format attr='fill-color' id='annotation_7' value='#00000000' />
+            <format attr='fill-color' id='annotation_8' value='#00000000' />
+            <format attr='line-visibility' id='annotation_8' value='on' />
+            <format attr='line-pattern-only' id='annotation_8' value='dotted' />
+            <format attr='stroke-color' id='annotation_8' value='#f28e2b' />
+            <format attr='stroke-color' id='annotation_9' value='#f28e2b' />
+            <format attr='fill-color' id='annotation_9' value='#00000000' />
+            <format attr='rounding' id='annotation_2' value='small' />
+            <format attr='stroke-size' id='annotation_2' value='2' />
+            <format attr='line-visibility' id='annotation_2' value='on' />
+            <format attr='line-pattern-only' id='annotation_2' value='dotted' />
+            <format attr='stroke-size' id='annotation_3' value='2' />
+            <format attr='stroke-size' id='annotation_4' value='2' />
+            <format attr='stroke-size' id='annotation_5' value='2' />
+            <format attr='stroke-size' id='annotation_7' value='2' />
+            <format attr='stroke-size' id='annotation_6' value='2' />
+            <format attr='line-visibility' id='annotation_9' value='on' />
+            <format attr='line-pattern-only' id='annotation_9' value='dotted' />
+            <format attr='stroke-size' id='annotation_9' value='2' />
+            <format attr='stroke-size' id='annotation_8' value='2' />
+            <format attr='fill-color' id='annotation_10' value='#ff00000e' />
+            <format attr='fill-color' id='annotation_11' value='#00aaff0e' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='true' x-axis='true' y-axis='true' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Times New Roman' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='shape' value='circle' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</rows>
+        <cols>(([federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk] / [federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]) * [federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk])</cols>
+        <annotations>
+          <annotation class='point' id='2' mark-position='1' pullback='0' text-width='64'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2000.6906474820144'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;China&quot;</bucket>
+                      <bucket>&quot;Export Skewness&quot;</bucket>
+                    </multibucket>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='45.548961424332347'>
+                  <node-reference>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='65' y='154' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='0' text-width='64'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2007.7545755838992'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;China&quot;</bucket>
+                      <bucket>&quot;Export Skewness&quot;</bucket>
+                    </multibucket>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='35.2112676056338'>
+                  <node-reference>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='89' y='-131' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='0' text-width='64'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2007.9504868851602'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;China&quot;</bucket>
+                      <bucket>&quot;Import Skewness&quot;</bucket>
+                    </multibucket>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='33.098591549295776'>
+                  <node-reference>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-68' y='-147' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='5' text-width='180'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>&quot;Import Skewness&quot;</value>
+                    <value>2018</value>
+                    <value>40</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-86' y='104' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='4.47214' text-width='180'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;The United Statse&quot;</value>
+                    <value>&quot;Export Skewness&quot;</value>
+                    <value>2008</value>
+                    <value>32</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-67' y='-77' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='5.83095' text-width='64'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;The United Statse&quot;</value>
+                    <value>&quot;Export Skewness&quot;</value>
+                    <value>2018</value>
+                    <value>36</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-116' y='55' />
+          </annotation>
+          <annotation class='point' id='8' mark-position='1' pullback='3.16228' text-width='64'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;The United Statse&quot;</value>
+                    <value>&quot;Import Skewness&quot;</value>
+                    <value>2008</value>
+                    <value>25</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-97' y='-39' />
+          </annotation>
+          <annotation class='point' id='9' mark-position='1' pullback='5.09902' text-width='64'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;The United Statse&quot;</value>
+                    <value>&quot;Import Skewness&quot;</value>
+                    <value>2018</value>
+                    <value>27</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-115' y='27' />
+          </annotation>
+          <annotation class='area' id='10' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text />
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='1996.0'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;China&quot;</bucket>
+                      <bucket>&quot;Export Skewness&quot;</bucket>
+                    </multibucket>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='50.0'>
+                  <node-reference>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2021.9440292469451'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;China&quot;</bucket>
+                      <bucket>&quot;Import Skewness&quot;</bucket>
+                    </multibucket>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='20.070422535211268'>
+                  <node-reference>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='11' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text />
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2021.9440292469451'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;China&quot;</bucket>
+                      <bucket>&quot;Import Skewness&quot;</bucket>
+                    </multibucket>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='50.0'>
+                  <node-reference>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2021.776111863192'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                      <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;The United Statse&quot;</bucket>
+                      <bucket>&quot;Import Skewness&quot;</bucket>
+                    </multibucket>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='20.070422535211268'>
+                  <node-reference>
+                    <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[sum:% Share of Economic Behavior:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{F19AD0BA-B5EC-4EB1-84F3-75C1997137CA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='仪表板 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='15'>The Regional Tendency Development of China and the United States</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#e6e6e6' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='font-family' value='Times New Roman' />
+          <format attr='color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='600' maxwidth='1000' minheight='600' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97334' id='10' param='vert' type-v2='layout-flow' w='98400' x='800' y='1333'>
+            <zone fixed-size='52' h='10000' id='11' is-fixed='true' type-v2='title' w='98400' x='800' y='1333'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='87334' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='11333'>
+              <zone h='87334' id='5' type-v2='layout-basic' w='98400' x='800' y='11333'>
+                <zone h='87334' id='3' name='工作表 1' show-title='false' w='98400' x='800' y='11333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8667' id='8' name='工作表 1' pane-specification-id='1' param='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]' show-title='false' type-v2='color' w='16800' x='82800' y='21000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='15'>The Regional Tendency Development of China and the United States</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97334' id='30' param='vert' type-v2='layout-flow' w='98400' x='800' y='1333'>
+                <zone fixed-size='52' h='10000' id='11' type-v2='title' w='98400' x='800' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='87334' id='3' is-fixed='true' name='工作表 1' show-title='false' w='98400' x='800' y='11333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8667' id='8' name='工作表 1' pane-specification-id='1' param='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]' show-title='false' type-v2='color' w='16800' x='82800' y='21000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E5846A76-24EB-4FCB-9902-64BBFFAF21B0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{943C034F-695A-429D-B552-5A0C0972C1BA}' />
+    </window>
+    <window class='dashboard' maximized='true' name='仪表板 1'>
+      <viewpoints>
+        <viewpoint name='工作表 1'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='horizontal'>
+                <node-reference>
+                  <fields>
+                    <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Country:nk]</field>
+                    <field>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]</field>
+                  </fields>
+                  <multibucket>
+                    <bucket>&quot;China&quot;</bucket>
+                    <bucket>&quot;Export Skewness&quot;</bucket>
+                  </multibucket>
+                  <axis>[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Year:qk]</axis>
+                </node-reference>
+                <page-reference />
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
+          <highlight field='[federated.16rjcv31ec2e7e13x8o7714hgdmo].[none:Skewness:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0CAA0AF7-1E28-4C1C-9951-C9BC96C2A2AD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='仪表板 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAU4UlEQVR4nO3dW3Ab133H8e9ZAARAECBBihQvokhKpO6WLFuyZPmSxHbieFznUrmJnUkn
+      TdtJOu1DZ/repz6m05m0M5lpO7lM46RJbCeNncS32FYiS7ZlWdbVsiSKlChexDsIEHdgTx8Y
+      y5ZAWbwBu8D+Py+2aezuT9D+uefsnj1Haa01QjiUW2tNMpm0OocQljCWslE8Hl/pHEIsyXLP
+      RfcK5RAL8MHJdxgcjTGTybL/0YeIRpOEQjVWx3I0KYASOts7yBcee5SXXnmRZ3/xFFf6x9HB
+      MGEjwvp9j3Pf9g6rIzqOFEAJ7dt9G28cOU5tbR1Vbi/ejbWYbh811WtprvNaHc+RpABKaHV7
+      N6vbrU4hPm5JnWCxfJlMhmw2a3UMx7NtAUwOn+XHTz3DwOhU4f/UmqGhYXLZJPFkBoDxgTMc
+      eOv9go+mZqeZiMzdKbh46gjDUwl++uMf8NJrhz72KZNoNFaMP4bFTJ5/7jny5vz/d3R4iJwJ
+      0Wj0Tz/J8ewzv8Kc58nQ0NDQ3L9kk7zx9rv88ZXf8OOfPkM699HOY9Eo5fZQybZNIH/Ax/TI
+      BCP9J/jvH55mfRimEpqGpkbM1CyGv44Ht7Xwo5dP092zhkfv3YTbBe+99UdOX7yC3+PGZeTo
+      67tCMueiLlyDX+X5zOM7SM9O4a5y86//8s/UtXYRmZ2l1q1wVQeJZzJ0r9vCI5+91+qvYAUY
+      1NYF+d8ffpfx8TxVq8KEqkx0HoYn4jSEvHz569/g5Z9/n/5hzV/9098TqPFjpMb5n//9NSnt
+      ZnZ6inW37WDy/DHODqe4e+82/P5aajDJmJqDLzzNUCTBm2+eYu++u6n1pek7cwn/hg18+4mv
+      4FJWfwefzLYFkE4pujatJZEw+Mzd27jS189De24nktJ4DZNAdTW+Wg+be9YSCgVJZxTTV88T
+      aGuia8M23KkZ8i6DtvZ1pFM5fLU1RIaGqDKTdGzeTb0f9t7/EJHZGJ3VnXgNFxlTYZDHG/Bb
+      /cdfISZKa1a3raeuIcfUTJT12+4kOzVK57pqGpvqqHJBS3s3NY2afCqBymU48sEQHe1r8dU1
+      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
+      2v8DQLERmv2pp6wAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
